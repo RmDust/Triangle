@@ -11,3 +11,39 @@
 
 ## Instruction  
 Suitable for triangles in C language teaching. Various triangles (right-angle triangles, equilateral triangles, equal waist triangles).  
+
+- Impotant  
+  + **need for some students, eazy-code goto -> Release -> 1.0.0 please.**  
+  + **you can NOT easy to get easy-code from 1.0.1**  
+
+### Interface  
+|Interface                            |Return |Tips                           |
+|:---                                 |:---   |                           ---:|
+|PrintTriangleI(Size)                 |void   |PrintTriangleI(2)              |
+|PrintTriangleIRA_RightDown(Size)     |void   |PrintTriangleIRA_RightDown(7)  |
+|PrintTriangleIRA_RightTop(Size)      |void   |PrintTriangleIRA_RightTop(0)   |
+|PrintTriangleIRA_LeftDown(Size)      |void   |PrintTriangleIRA_LeftDown(7)   |
+|PrintTriangleIRA_LeftTop(Size)       |void   |PrintTriangleIRA_LeftTop(7)    |
+
+```C
+/* Files
+ *   Main.c
+ *   Triangle.c
+ *   Triangle.h
+ */
+
+#include <stdio.h>
+#include "Triangle.h"
+
+int main(void) {
+
+        /* Output
+         * =
+         * ==
+         * ===
+         */
+        printf("%d", PrintTriangleIRA_LeftDown(3));
+        
+        return 0;
+}
+```
